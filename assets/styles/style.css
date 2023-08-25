@@ -1,0 +1,212 @@
+/* sebelum direview */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Quicksand:wght@500;700&display=swap'); */
+
+/* setelah direview */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Saran setelah direview */
+html {
+    scroll-padding-top: 70px; /*agar saat navigasi di klik, judul artikel tidak tertutup.*/
+    scroll-behavior: smooth; /*scroll saat klik navigasi jadi lancar*/
+  }
+/* Saran setelah direview */
+
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252B1F;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 30px;
+    padding: 100px;
+    background-image: url("../image/savanna.jpg");
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+
+nav {
+    background-color: #EFD392;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+.content header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content header h1 {
+    margin: 0;
+}
+
+.content h2, aside h2 {
+    border-bottom: 1px solid black;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+}
+
+.content {
+    flex: 4;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem 2rem;
+}
+
+.karakteristik-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.karakteristik-item {
+    width: 200px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.hewan-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.hewan-container img {
+    flex: 1;
+    border-radius: 5px;
+}
+
+.hewan-container p {
+    flex: 2;
+}
+
+.featured-image {
+    width: 250px;
+    min-width: 150px;
+}
+
+.daftar-pustaka li a {
+    text-decoration: none;
+    color: black;
+}
+
+.daftar-pustaka li a:hover {
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+}
+
+aside {
+    flex: 1;
+}
+
+aside header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+aside .social-media ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0;
+}
+
+aside .social-media li {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+
+footer {
+    padding: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        justify-content: center;
+    }
+    .hewan-container {
+        flex-flow: column nowrap;
+    }
+    .hewan-container img {
+        align-self: center;
+    }
+    .contoh section h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        font-size: 4vw;
+    }
+    nav li {
+        font-size: 3vw;
+    }
+    .content h1 {
+        font-size: 4vw;
+    }
+}
